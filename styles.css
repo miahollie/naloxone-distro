@@ -1,0 +1,123 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;700&family=Lora:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-size: 16px;
+}
+
+img{
+    width: 100%
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 1.5em;
+    color: gray
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    color: gray;
+}
+
+figcaption,p{
+    line-height: 1.5em;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Bitter', serif;
+    font-family: 'Lora', serif;
+    width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.icon-container{
+    font-family: 'Bitter', serif;
+    font-family: 'Lora', serif;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+figure{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_img{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.head-photo{
+    font-size: 1em;
+    color: gray;
+    margin: 5px;
+}
+
+.icon-container img{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+.graphic-text{
+    margin: auto;
+}
+
+.byline{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 0px; 
+  }
+  
+  .date{
+    font-weight: 100;
+    font-size: .85em;
+    margin-top: 0px;
+  }
+
+@media(min-width: 681px) {
+    
+    p.intro{
+        max-width: 65%;
+    }
+
+    .icon-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .graphic{
+        flex-basis: 30%;
+    }
+
+    .graphic-text{
+        padding: 10px;
+    }
+
+    @media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here.
+        Note these styles will be applied to anything 729px or larger -- so desktop */
+        .container{
+          max-width: 100%;
+          margin: 0 auto;
+        }
+    }
+}
